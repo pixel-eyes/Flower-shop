@@ -1,0 +1,176 @@
+body {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+/*Overflow: Hidden是为了不让文字内容太长流出container，Auto会根据文字内容长度自动添加scroll bar
+ https://blog.hubspot.com/website/css-overflow#:~:text=In CSS%2C overflow occurs when,what happens to the overflow.
+*/
+header {
+  padding: 5px 20px 15px 20px;
+  overflow: hidden;
+}
+
+header h1 {
+  float: left;
+  margin-bottom: 5px;
+}
+
+header nav {
+  padding: 35px 50px 15px;
+  float: right;
+}
+
+header nav a {
+  color: #3a1c08;
+  text-decoration: none;
+  margin-left: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hero {
+  background-image: url("hero.jpg");
+  background-size: cover;
+  padding-top: 230px;
+  padding-bottom: 200px;
+  background-position: right center;
+}
+
+/*如果写了max-width的话那马上接着就要写margin-left和margin-right，且一般都用auto*/
+.hero div {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: David Libreid;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flower {
+  overflow: hidden;
+}
+.flower img {
+  float: left;
+  width: 33.33%;
+}
+
+.quote div {
+  width: 50vw;
+  float: left;
+  padding: 50px 20px 40px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.quote {
+  display: flex;
+}
+
+.Liv {
+  background-color: #f7f1ee;
+}
+
+.Chelsea {
+  background-color: #ffffff;
+}
+
+.quote img {
+  border-radius: 100%;
+}
+
+.quote blockquote {
+  font-family: David Libreid;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.15;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 15px auto 5px auto;
+}
+
+.chair {
+  background-image: url("full-bleed.jpg");
+  background-position: center bottom;
+  height: 1000px;
+}
+
+/*Text-alignment：center只能用在text和image上*/
+.logo {
+  background-color: #eeae9f;
+  padding: 20px 20px 35px 20px;
+  text-align: center;
+}
+
+.logo img {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+/*Margin for push away elements*/
+.logo p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #3a1a05;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  overflow: hidden;
+}
+
+footer img {
+  float: left;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+footer p {
+  float: right;
+  color: #ffffff;
+}
+
+/*This is where responsive start*/
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .chair {
+    height: 300px;
+  }
+
+  .quote div {
+    float: none;
+    width: auto;
+  }
+}
